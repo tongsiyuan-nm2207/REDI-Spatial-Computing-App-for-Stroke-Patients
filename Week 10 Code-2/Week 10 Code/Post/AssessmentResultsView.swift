@@ -12,6 +12,7 @@ struct AssessmentResultsView: View {
     let averageReactionTime: Double
     @State private var showingAirDropSheet = false
     @State private var showingSuccessView = false
+    @State private var navigateToWelcome = false
     
     // Format reaction time as seconds with 2 decimal places
     var formattedReactionTime: String {
@@ -22,66 +23,73 @@ struct AssessmentResultsView: View {
         ZStack {
             Color.clear
             
-            VStack(spacing: 50) {
-                // Title
-                Text("Lina Tay's Assessment Results")
-                    .font(.system(size: 32, weight: .semibold))
-                    .foregroundStyle(.white)
-                
-                // Metrics Cards
-                HStack(spacing: 50) {
-                    MetricCard(
-                        value: formattedReactionTime,
-                        label: "Average reaction time"
-                    )
+            if !navigateToWelcome {
+                VStack(spacing: 50) {
+                    // Title
+                    Text("Lina Tay's Assessment Results")
+                        .font(.system(size: 32, weight: .semibold))
+                        .foregroundStyle(.white)
                     
-                    MetricCard(
-                        value: "\(marks)/4",
-                        label: "Obstacles completed"
-                    )
-                }
-                .padding(.horizontal, 280)
-                
-                // Action Buttons
-                HStack(spacing: 16) {
-                    ActionButton(
-                        icon: "checkmark.circle",
-                        label: "Finish",
-                        isPrimary: false,
-                        action: {
-                            // Finish action
-                        }
-                    )
+                    // Metrics Cards
+                    HStack(spacing: 50) {
+                        MetricCard(
+                            value: formattedReactionTime,
+                            label: "Average reaction time"
+                        )
+                        
+                        MetricCard(
+                            value: "\(marks)/4",
+                            label: "Obstacles completed"
+                        )
+                    }
+                    .padding(.horizontal, 280)
                     
-                    ActionButton(
-                        icon: "square.and.arrow.up",
-                        label: "Airdrop PDF",
-                        isPrimary: false,
-                        action: {
-                            showingAirDropSheet = true
-                        }
-                    )
+                    // Action Buttons
+                    HStack(spacing: 16) {
+                        ActionButton(
+                            icon: "checkmark.circle",
+                            label: "Finish",
+                            isPrimary: false,
+                            action: {
+                                navigateToWelcome = true
+                            }
+                        )
+                        
+                        ActionButton(
+                            icon: "square.and.arrow.up",
+                            label: "Airdrop PDF",
+                            isPrimary: false,
+                            action: {
+                                showingAirDropSheet = true
+                            }
+                        )
+                    }
+                    .padding(.top, 20)
                 }
-                .padding(.top, 20)
-            }
-            
-            // AirDrop Sheet Overlay
-            if showingAirDropSheet && !showingSuccessView {
-                AirDropSheet(
-                    isPresented: $showingAirDropSheet,
-                    showingSuccessView: $showingSuccessView
-                )
-                .transition(.scale(scale: 0.9).combined(with: .opacity))
-            }
-            
-            // Success View Overlay
-            if showingSuccessView {
-                AirDropSuccessView(isPresented: $showingSuccessView)
+                .transition(.opacity)
+                
+                // AirDrop Sheet Overlay
+                if showingAirDropSheet && !showingSuccessView {
+                    AirDropSheet(
+                        isPresented: $showingAirDropSheet,
+                        showingSuccessView: $showingSuccessView
+                    )
                     .transition(.scale(scale: 0.9).combined(with: .opacity))
+                }
+                
+                // Success View Overlay
+                if showingSuccessView {
+                    AirDropSuccessView(isPresented: $showingSuccessView)
+                        .transition(.scale(scale: 0.9).combined(with: .opacity))
+                }
+            } else {
+                WelcomeView()
+                    .transition(.opacity)
             }
         }
         .animation(.easeInOut(duration: 0.3), value: showingAirDropSheet)
         .animation(.easeInOut(duration: 0.3), value: showingSuccessView)
+        .animation(.easeInOut(duration: 0.3), value: navigateToWelcome)
     }
 }
 
