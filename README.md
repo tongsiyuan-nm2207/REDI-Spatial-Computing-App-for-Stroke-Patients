@@ -1,15 +1,16 @@
 REDI is an immersive stroke patient readiness assessment designed to leverage the unique spatial computing capabilities of Apple Vision Pro. The project is developed in collaboration with the Apple Developer Center Singapore and the National University Hospital, Division of Rehabilitation.
 
-Problem Overview
+# Problem Overview
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/767d962a-a71b-4f91-af99-00ca0435bbfc" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/46c7bf34-506a-4188-848e-d4036b0a3ce1" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/349e5246-5267-4b4f-bdbe-013fe33498b4" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e540178d-d26e-43c5-9680-05897d414180" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/cde0657e-971e-44c1-af4b-24ed1613334f" />
 
-Proposed Solution
-Over several months, we followed an iterative design-to-implementation workflow—using Figma for early concept exploration and validation, then moving to SwiftUI to build the functional system. The resulting prototype combines immersive media with voice and hand interactions.
-[Demo](https://www.youtube.com/watch?v=eq3s5V5WnYo)
+# Proposed Solution
+
+Over several months, we followed an iterative design-to-implementation workflow—using Figma for early concept exploration and validation, then moving to SwiftUI to build the functional system. The resulting prototype combines immersive media with voice and hand interactions. [You can watch the video demo here](https://www.youtube.com/watch?v=eq3s5V5WnYo)
+
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/94c41f95-3685-4cea-998f-8fcb3eb9da65" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/fd9df509-0874-4b3c-ae46-73eb947044f7" />
