@@ -5,6 +5,7 @@ REDI is an **immersive stroke patient readiness assessment** designed to leverag
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/46c7bf34-506a-4188-848e-d4036b0a3ce1" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/349e5246-5267-4b4f-bdbe-013fe33498b4" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e540178d-d26e-43c5-9680-05897d414180" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3ed8e36f-1f2c-4232-9e15-af830d06f80a" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/cde0657e-971e-44c1-af4b-24ed1613334f" />
 
 # Proposed Solution
