@@ -1,4 +1,4 @@
-REDI is an immersive stroke patient readiness assessment designed to leverage the unique spatial computing capabilities of Apple Vision Pro. The project is developed in collaboration with the Apple Developer Center Singapore and the National University Hospital, Division of Rehabilitation.
+REDI is an **immersive stroke patient readiness assessment** designed to leverage the unique **spatial computing** capabilities of **Apple Vision Pro**. The project is developed in collaboration with the **Apple Developer Center Singapore** and the **National University Hospital, Division of Rehabilitation**.
 
 # Problem Overview
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/767d962a-a71b-4f91-af99-00ca0435bbfc" />
@@ -9,7 +9,7 @@ REDI is an immersive stroke patient readiness assessment designed to leverage th
 
 # Proposed Solution
 
-Over several months, we followed an iterative design-to-implementation workflow—using Figma for early concept exploration and validation, then moving to SwiftUI to build the functional system. The resulting prototype combines immersive media with voice and hand interactions. [You can watch the video demo here](https://www.youtube.com/watch?v=eq3s5V5WnYo)
+Over several months, we followed an iterative design-to-implementation workflow—using Figma for early concept exploration and validation, then moving to **SwiftUI** to build the functional system. The resulting prototype combines **immersive media** with **voice and hand interactions**. [You can watch the video demo here](https://www.youtube.com/watch?v=eq3s5V5WnYo)
 
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/94c41f95-3685-4cea-998f-8fcb3eb9da65" />
